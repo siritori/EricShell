@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		075801E91520DF2300ED7C38 /* ShellTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = 075801E81520DF2300ED7C38 /* ShellTwitter.m */; };
 		07D7E0BC1520796B00AD4BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BB1520796B00AD4BC3 /* UIKit.framework */; };
 		07D7E0BE1520796B00AD4BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BD1520796B00AD4BC3 /* Foundation.framework */; };
 		07D7E0C01520796B00AD4BC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BF1520796B00AD4BC3 /* CoreGraphics.framework */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		075801E71520DF2300ED7C38 /* ShellTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellTwitter.h; path = ShellModules/ShellTwitter.h; sourceTree = "<group>"; };
+		075801E81520DF2300ED7C38 /* ShellTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellTwitter.m; path = ShellModules/ShellTwitter.m; sourceTree = "<group>"; };
 		07D7E0B71520796B00AD4BC3 /* EricShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EricShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07D7E0BB1520796B00AD4BC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07D7E0BD1520796B00AD4BC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,7 +40,7 @@
 		07D7E0CE1520796C00AD4BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		07D7E0D01520796C00AD4BC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		07D7E0D11520796C00AD4BC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		07D7E0D915207A6300AD4BC3 /* ShellFlashDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; name = ShellFlashDeck.h; path = ShellModules/ShellFlashDeck.h; sourceTree = "<group>"; };
+		07D7E0D915207A6300AD4BC3 /* ShellFlashDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellFlashDeck.h; path = ShellModules/ShellFlashDeck.h; sourceTree = "<group>"; };
 		07D7E0DA15207A6300AD4BC3 /* ShellFlashDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellFlashDeck.m; path = ShellModules/ShellFlashDeck.m; sourceTree = "<group>"; };
 		07D7E0DB15207A6300AD4BC3 /* ShellModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellModule.h; path = ShellModules/ShellModule.h; sourceTree = "<group>"; };
 		07D7E0DC15207A6300AD4BC3 /* ShellModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellModule.m; path = ShellModules/ShellModule.m; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				07D7E0DA15207A6300AD4BC3 /* ShellFlashDeck.m */,
 				07D7E0DD15207A6400AD4BC3 /* ShellStandard.h */,
 				07D7E0DE15207A6400AD4BC3 /* ShellStandard.m */,
+				075801E71520DF2300ED7C38 /* ShellTwitter.h */,
+				075801E81520DF2300ED7C38 /* ShellTwitter.m */,
 			);
 			name = ShellModules;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 				07D7E0E815207AAD00AD4BC3 /* FlashCard.m in Sources */,
 				07D7E0E915207AAD00AD4BC3 /* FlashDeck.m in Sources */,
 				07D7E0EA15207AAD00AD4BC3 /* Shell.m in Sources */,
+				075801E91520DF2300ED7C38 /* ShellTwitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +327,7 @@
 				07D7E0D71520796C00AD4BC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
