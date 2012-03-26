@@ -15,7 +15,7 @@
 		07D7E0CC1520796C00AD4BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0CB1520796C00AD4BC3 /* AppDelegate.m */; };
 		07D7E0CF1520796C00AD4BC3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D7E0CD1520796C00AD4BC3 /* MainStoryboard.storyboard */; };
 		07D7E0D21520796C00AD4BC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0D11520796C00AD4BC3 /* ViewController.m */; };
-		07D7E0DF15207A6400AD4BC3 /* ShellFlashCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0DA15207A6300AD4BC3 /* ShellFlashCard.m */; };
+		07D7E0DF15207A6400AD4BC3 /* ShellFlashDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0DA15207A6300AD4BC3 /* ShellFlashDeck.m */; };
 		07D7E0E015207A6400AD4BC3 /* ShellModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0DC15207A6300AD4BC3 /* ShellModule.m */; };
 		07D7E0E115207A6400AD4BC3 /* ShellStandard.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0DE15207A6400AD4BC3 /* ShellStandard.m */; };
 		07D7E0E815207AAD00AD4BC3 /* FlashCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0E315207AAD00AD4BC3 /* FlashCard.m */; };
@@ -37,8 +37,8 @@
 		07D7E0CE1520796C00AD4BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		07D7E0D01520796C00AD4BC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		07D7E0D11520796C00AD4BC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		07D7E0D915207A6300AD4BC3 /* ShellFlashCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellFlashCard.h; path = ShellModules/ShellFlashCard.h; sourceTree = "<group>"; };
-		07D7E0DA15207A6300AD4BC3 /* ShellFlashCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellFlashCard.m; path = ShellModules/ShellFlashCard.m; sourceTree = "<group>"; };
+		07D7E0D915207A6300AD4BC3 /* ShellFlashDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; name = ShellFlashDeck.h; path = ShellModules/ShellFlashDeck.h; sourceTree = "<group>"; };
+		07D7E0DA15207A6300AD4BC3 /* ShellFlashDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellFlashDeck.m; path = ShellModules/ShellFlashDeck.m; sourceTree = "<group>"; };
 		07D7E0DB15207A6300AD4BC3 /* ShellModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellModule.h; path = ShellModules/ShellModule.h; sourceTree = "<group>"; };
 		07D7E0DC15207A6300AD4BC3 /* ShellModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShellModule.m; path = ShellModules/ShellModule.m; sourceTree = "<group>"; };
 		07D7E0DD15207A6400AD4BC3 /* ShellStandard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellStandard.h; path = ShellModules/ShellStandard.h; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 			children = (
 				07D7E0DB15207A6300AD4BC3 /* ShellModule.h */,
 				07D7E0DC15207A6300AD4BC3 /* ShellModule.m */,
-				07D7E0D915207A6300AD4BC3 /* ShellFlashCard.h */,
-				07D7E0DA15207A6300AD4BC3 /* ShellFlashCard.m */,
+				07D7E0D915207A6300AD4BC3 /* ShellFlashDeck.h */,
+				07D7E0DA15207A6300AD4BC3 /* ShellFlashDeck.m */,
 				07D7E0DD15207A6400AD4BC3 /* ShellStandard.h */,
 				07D7E0DE15207A6400AD4BC3 /* ShellStandard.m */,
 			);
@@ -202,7 +202,7 @@
 				07D7E0C81520796B00AD4BC3 /* main.m in Sources */,
 				07D7E0CC1520796C00AD4BC3 /* AppDelegate.m in Sources */,
 				07D7E0D21520796C00AD4BC3 /* ViewController.m in Sources */,
-				07D7E0DF15207A6400AD4BC3 /* ShellFlashCard.m in Sources */,
+				07D7E0DF15207A6400AD4BC3 /* ShellFlashDeck.m in Sources */,
 				07D7E0E015207A6400AD4BC3 /* ShellModule.m in Sources */,
 				07D7E0E115207A6400AD4BC3 /* ShellStandard.m in Sources */,
 				07D7E0E815207AAD00AD4BC3 /* FlashCard.m in Sources */,

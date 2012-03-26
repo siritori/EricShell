@@ -9,7 +9,7 @@
 #import "Shell.h"
 #import "ShellModule.h"
 #import "ShellStandard.h"
-#import "ShellFlashCard.h"
+#import "ShellFlashDeck.h"
 
 @implementation Shell {
    __weak UITextView *console;
@@ -151,7 +151,7 @@ static NSArray* split2token(NSString *input)
    // ShellModuleをロードする
    modules = [NSArray arrayWithObjects:
               [[ShellStandard alloc] initWithShell:self],
-              [[ShellFlashCard alloc] initWithShell:self],
+              [[ShellFlashDeck alloc] initWithShell:self],
               nil];
    return self;
 }
