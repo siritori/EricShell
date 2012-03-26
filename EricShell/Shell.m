@@ -17,7 +17,7 @@ enum {
 };
 
 @implementation Shell {
-   __weak UITextView *console;
+   __weak UITextView *uiconsole;
    NSArray *modules;
    NSConditionLock *stdin_lock;
    NSString  *stdin_buf;
@@ -80,10 +80,10 @@ static NSArray* split2token(NSString *input)
 -(void)flushConsole_ // called from flushConsole
 {
    @synchronized(stdout_buf) {
-      @synchronized(console) {
-         console.text = [console.text stringByAppendingString:stdout_buf];
-         NSRange bottom = NSMakeRange(console.text.length-1, 1);
-         [console scrollRangeToVisible:bottom];
+      @synchronized(uiconsole) {
+         uiconsole.text = [uiconsole.text stringByAppendingString:stdout_buf];
+         NSRange bottom = NSMakeRange(uiconsole.text.length-1, 1);
+         [uiconsole scrollRangeToVisible:bottom];
          stdout_buf = @"";
       }
    }
@@ -93,8 +93,8 @@ static NSArray* split2token(NSString *input)
    @synchronized(stdout_buf) {
       stdout_buf = @"";
    }
-   @synchronized(console) {
-      console.text = @"";
+   @synchronized(uiconsole) {
+      uiconsole.text = @"";
    }
 }
 
@@ -160,7 +160,7 @@ static NSArray* split2token(NSString *input)
 -(id)initWithConsole:(UITextView *)console_
 {
    if(!(self = [super init])) return nil;
-   console = console_;
+   uiconsole = console_;
    stdin_buf   = @"";
    stdout_buf  = @"";
    // UITextFieldに入力が入ったときにlockできる
