@@ -22,6 +22,7 @@
 		07D7E0E815207AAD00AD4BC3 /* FlashCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0E315207AAD00AD4BC3 /* FlashCard.m */; };
 		07D7E0E915207AAD00AD4BC3 /* FlashDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0E515207AAD00AD4BC3 /* FlashDeck.m */; };
 		07D7E0EA15207AAD00AD4BC3 /* Shell.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0E715207AAD00AD4BC3 /* Shell.m */; };
+		07E0B41F1520E2AF00B8553B /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E0B41E1520E2AF00B8553B /* Twitter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		07D7E0E515207AAD00AD4BC3 /* FlashDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlashDeck.m; sourceTree = "<group>"; };
 		07D7E0E615207AAD00AD4BC3 /* Shell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shell.h; sourceTree = "<group>"; };
 		07D7E0E715207AAD00AD4BC3 /* Shell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Shell.m; sourceTree = "<group>"; };
+		07E0B41E1520E2AF00B8553B /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E0B41F1520E2AF00B8553B /* Twitter.framework in Frameworks */,
 				07D7E0BC1520796B00AD4BC3 /* UIKit.framework in Frameworks */,
 				07D7E0BE1520796B00AD4BC3 /* Foundation.framework in Frameworks */,
 				07D7E0C01520796B00AD4BC3 /* CoreGraphics.framework in Frameworks */,
@@ -71,6 +74,7 @@
 		07D7E0AC1520796B00AD4BC3 = {
 			isa = PBXGroup;
 			children = (
+				07E0B41E1520E2AF00B8553B /* Twitter.framework */,
 				07D7E0C11520796B00AD4BC3 /* EricShell */,
 				07D7E0BA1520796B00AD4BC3 /* Frameworks */,
 				07D7E0B81520796B00AD4BC3 /* Products */,
