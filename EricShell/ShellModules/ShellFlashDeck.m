@@ -7,10 +7,10 @@
 //
 
 #import "ShellFlashDeck.h"
-#import "FlashCard.h"
+#import "FlashDeck.h"
 
 @implementation ShellFlashDeck {
-   FlashCard *card;
+   FlashDeck *deck;
 }
 static const uint NUM_COMMANDS = 2;
 
@@ -18,40 +18,41 @@ static const uint NUM_COMMANDS = 2;
 {
    if(!(self = [super initWithShell:shell_])) return nil;
    NSString *commandNames[NUM_COMMANDS] = {
-      @"create_card",
-      @"print_card",
+      @"create_deck",
+      @"print_deck",
    };
    NSString *methodNames[NUM_COMMANDS] = {
-      @"cmdCreateCard:",
-      @"cmdPrintCard:",
+      @"cmdCreateDeck:",
+      @"cmdPrintDeck:",
    };
-   card = nil;
+   deck = nil;
    vtable = [NSDictionary dictionaryWithObjects:(id *)methodNames
                                         forKeys:(id *)commandNames count:NUM_COMMANDS];
    return self;
 }
 
--(NSInteger)cmdCreateCard:(NSArray *)args
+-(NSInteger)cmdCreateDeck:(NSArray *)args
 {
-   [shell print:@"question:"];
-   [shell flushConsole];
-   NSString *question = [shell getLine];
-   [shell print:@"%@\nanswer:", question];
-   [shell flushConsole];
-   NSString *answer = [shell getLine];
-   [shell print:@"%@\n", answer];   
-   card = [[FlashCard alloc]initWithQuestion:question answer:answer];
-   NSLog(@"%@", card);
+   [shell print:@"name:"];
+   deck = [[FlashDeck alloc]initWithName: [shell getLine]];
+   while (1) {
+      NSString *q, *a;
+      [shell print:@"question:"];
+      q = [shell getLine];
+      [shell print:@"answer:", q];
+      a = [shell getLine];
+      FlashCard *card = [[FlashCard alloc]initWithQuestion:q answer:a];
+      [deck addCard:card];
+      [shell print:@"continue?(y/n):"];
+      if([[shell getLine] compare:@"n"] == NSOrderedSame) break; 
+   }
    return 1;
 }
 
--(NSInteger)cmdPrintCard:(NSArray *)args
+-(NSInteger)cmdPrintDeck:(NSArray *)args
 {
-   if(!card) return 0;
-   [shell print:@"question:%@\n", card.question];
-   for (NSString *ans in card.answers) {
-      [shell print:@"answer:%@\n", ans];
-   }
+   if(!deck) return 0;
+   [shell print:@"%@\n", deck];
    return 1;
 }
 
