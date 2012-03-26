@@ -11,6 +11,11 @@
 #import "ShellStandard.h"
 #import "ShellFlashDeck.h"
 
+enum {
+   STATE_NO_INPUT,
+   STATE_ANY_INPUT
+};
+
 @implementation Shell {
    __weak UITextView *console;
    NSArray *modules;

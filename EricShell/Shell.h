@@ -10,11 +10,6 @@
 #import "Foundation/NSThread.h"
 #define PROMPT @"[eric@iPad] "
 
-enum {
-   STATE_NO_INPUT,
-   STATE_ANY_INPUT
-};
-
 @interface Shell : NSObject
 
 // I/O buffer management
