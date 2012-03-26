@@ -62,8 +62,6 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-   [input_textfield setUserInteractionEnabled:YES];
-   [input_textfield becomeFirstResponder];
    return YES;
 }
 
