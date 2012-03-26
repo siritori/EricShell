@@ -24,6 +24,7 @@
 // Interface
 -(void)addCard:(FlashCard *)card;
 -(FlashCard *)cardAt:(NSUInteger)index;
+-(NSString *)description;
 
 // Enumeration
 -(NSEnumerator *)cardEnumerator;
