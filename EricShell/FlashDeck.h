@@ -22,6 +22,7 @@
 -(id)initWithName:(NSString*)name_;
 
 // Interface
+-(void)addCard:(FlashCard *)card;
 -(FlashCard*)cardAt:(NSUInteger)index;
 
 // Enumeration
