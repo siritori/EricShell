@@ -12,11 +12,13 @@
 
 #pragma mark Propaties
 
--(NSUInteger)count {
+-(NSUInteger)count
+{
    return [cards count];
 }
 
--(NSUInteger)num_wrong {
+-(NSUInteger)num_wrong
+{
    NSUInteger sum = 0;
    for (FlashCard *card in cards) {
       sum += card.num_wrong;
@@ -26,7 +28,8 @@
 
 #pragma mark Lifecycle
 
--(id)initWithName:(NSString *)name_ {
+-(id)initWithName:(NSString *)name_
+{
    if(!(self = [super init])) return nil;
    name = name_;
    cards = [NSMutableArray new];
@@ -41,14 +44,16 @@
 }
 
 // index番目のカードを取得する
--(FlashCard *)cardAt:(NSUInteger)index {
+-(FlashCard *)cardAt:(NSUInteger)index
+{
    return [cards objectAtIndex:index];
 }
 
 #pragma mark Enumeration
 
 // cardsを数え上げるenumeratorを返す(for FlashDeckEnumerator only)
--(NSEnumerator*)cardEnumerator {
+-(NSEnumerator*)cardEnumerator
+{
    return [cards objectEnumerator];
 }
 
@@ -65,13 +70,15 @@
 
 // FlashDeckのEnumerator
 @implementation FlashDeckEnumerator
--(id)initWithFlashDeck:(FlashDeck *)deck_ {
+-(id)initWithFlashDeck:(FlashDeck *)deck_
+{
    if(!(self = [super init])) return nil;
    deck = deck_;
    enumerator = [deck cardEnumerator];
    return self;
 }
--(id)nextObject {
+-(id)nextObject
+{
    return [enumerator nextObject];
 }
 @end
