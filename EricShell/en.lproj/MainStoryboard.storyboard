@@ -32,9 +32,6 @@
                                         <color key="textColor" red="0.1759698536" green="1" blue="0.05315804994" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="send"/>
-                                        <connections>
-                                            <action selector="touched:" destination="2" eventType="touchDown" id="Ox4-XH-DFq"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
