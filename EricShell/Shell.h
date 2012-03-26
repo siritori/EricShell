@@ -23,6 +23,7 @@ enum {
 // Interface
 -(NSString *)getLine;
 -(NSInteger)execText:(NSString *)input;
+-(void)printWithBuffering:(NSString *)fmt, ...;
 -(void)print:(NSString *)fmt, ...;
 -(void)flushConsole;
 -(void)clearConsole;

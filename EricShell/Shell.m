@@ -113,13 +113,24 @@ static NSArray* split2token(NSString *input)
 }
 
 // 指定されたフォーマットに従って文字列を整形し、stdout_bufに溜める。画面表示はflushするまでされない。
+-(void)printWithBuffering:(NSString *)fmt, ...
+{
+   va_list list;
+   va_start(list, fmt);
+   NSString *str = [[NSString alloc] initWithFormat:fmt arguments:list];
+   va_end(list);
+   [self addOutputBuffer:str];   
+}
+
+// 指定されたフォーマットに従って文字列を整形して画面表示する。バッファリングしない。
 -(void)print:(NSString *)fmt, ...
 {
    va_list list;
    va_start(list, fmt);
    NSString *str = [[NSString alloc] initWithFormat:fmt arguments:list];
-   [self addOutputBuffer:str];
    va_end(list);
+   [self addOutputBuffer:str];
+   [self flushConsole];
 }
 
 // stdout_bufに溜まった文字列を実際にUITextViewに反映してスクロールする。
