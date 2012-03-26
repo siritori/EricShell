@@ -79,13 +79,11 @@ static NSArray* split2token(NSString *input)
 
 -(void)flushConsole_ // called from flushConsole
 {
-   @synchronized(stdout_buf) {
-      @synchronized(uiconsole) {
-         uiconsole.text = [uiconsole.text stringByAppendingString:stdout_buf];
-         NSRange bottom = NSMakeRange(uiconsole.text.length-1, 1);
-         [uiconsole scrollRangeToVisible:bottom];
-         stdout_buf = @"";
-      }
+   @synchronized(uiconsole) {
+      uiconsole.text = [uiconsole.text stringByAppendingString:stdout_buf];
+      NSRange bottom = NSMakeRange(uiconsole.text.length-1, 1);
+      [uiconsole scrollRangeToVisible:bottom];
+      stdout_buf = @"";
    }
 }
 -(void)clearConsole_ // called from clearConsole
@@ -144,7 +142,7 @@ static NSArray* split2token(NSString *input)
 {
    @synchronized(stdout_buf) {
       if(stdout_buf.length == 0) return;
-      [self performSelectorOnMainThread:@selector(flushConsole_) withObject:nil waitUntilDone:NO];
+      [self performSelectorOnMainThread:@selector(flushConsole_) withObject:nil waitUntilDone:YES];
    }
 }
 
