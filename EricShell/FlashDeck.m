@@ -8,9 +8,13 @@
 
 #import "FlashDeck.h"
 
-@implementation FlashDeck
+@implementation FlashDeck {
+   NSMutableArray *cards;   
+}
 
 #pragma mark Propaties
+
+@synthesize name;
 
 -(NSUInteger)count
 {

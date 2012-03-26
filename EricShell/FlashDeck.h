@@ -13,8 +13,8 @@
 @interface FlashDeck : NSObject <NSFastEnumeration> {
 @private
    NSString *name;
-   NSMutableArray *cards;
 }
+@property (readonly) NSString *name;
 @property (readonly) NSUInteger count; // number of cards
 @property (readonly) NSUInteger num_wrong; // sum num_wrong in cards
 
