@@ -41,6 +41,20 @@
 }
 
 #pragma mark Interface
+
+-(NSString *)description
+{
+   NSString *ret = [NSString stringWithFormat:@"======\nname:%@\n", name];
+   for (FlashCard *c in cards) {
+      ret = [ret stringByAppendingFormat:@"question:%@\nanswer:\n", c.question];
+      for (NSString *ans in c.answers) {
+         ret = [ret stringByAppendingFormat:@"   %@\n", ans];
+      }
+   }
+   ret = [ret stringByAppendingFormat:@"======\n"];
+   return ret;
+}
+
 // Cardを末尾に追加する
 -(void)addCard:(FlashCard *)card
 {
