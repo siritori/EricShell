@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07D7E0BC1520796B00AD4BC3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BB1520796B00AD4BC3 /* UIKit.framework */; };
+		07D7E0BE1520796B00AD4BC3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BD1520796B00AD4BC3 /* Foundation.framework */; };
+		07D7E0C01520796B00AD4BC3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D7E0BF1520796B00AD4BC3 /* CoreGraphics.framework */; };
+		07D7E0C61520796B00AD4BC3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07D7E0C41520796B00AD4BC3 /* InfoPlist.strings */; };
+		07D7E0C81520796B00AD4BC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0C71520796B00AD4BC3 /* main.m */; };
+		07D7E0CC1520796C00AD4BC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0CB1520796C00AD4BC3 /* AppDelegate.m */; };
+		07D7E0CF1520796C00AD4BC3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07D7E0CD1520796C00AD4BC3 /* MainStoryboard.storyboard */; };
+		07D7E0D21520796C00AD4BC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07D7E0D11520796C00AD4BC3 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07D7E0B71520796B00AD4BC3 /* EricShell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EricShell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07D7E0BB1520796B00AD4BC3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07D7E0BD1520796B00AD4BC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07D7E0BF1520796B00AD4BC3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07D7E0C31520796B00AD4BC3 /* EricShell-Info.plist */ = {isa = PBXFileReference; path = "EricShell-Info.plist"; sourceTree = "<group>"; };
+		07D7E0C51520796B00AD4BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07D7E0C71520796B00AD4BC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07D7E0C91520796B00AD4BC3 /* EricShell-Prefix.pch */ = {isa = PBXFileReference; path = "EricShell-Prefix.pch"; sourceTree = "<group>"; };
+		07D7E0CA1520796C00AD4BC3 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		07D7E0CB1520796C00AD4BC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		07D7E0CE1520796C00AD4BC3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		07D7E0D01520796C00AD4BC3 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		07D7E0D11520796C00AD4BC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07D7E0B41520796B00AD4BC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D7E0BC1520796B00AD4BC3 /* UIKit.framework in Frameworks */,
+				07D7E0BE1520796B00AD4BC3 /* Foundation.framework in Frameworks */,
+				07D7E0C01520796B00AD4BC3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07D7E0AC1520796B00AD4BC3 = {
+			isa = PBXGroup;
+			children = (
+				07D7E0C11520796B00AD4BC3 /* EricShell */,
+				07D7E0BA1520796B00AD4BC3 /* Frameworks */,
+				07D7E0B81520796B00AD4BC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07D7E0B81520796B00AD4BC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07D7E0B71520796B00AD4BC3 /* EricShell.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07D7E0BA1520796B00AD4BC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07D7E0BB1520796B00AD4BC3 /* UIKit.framework */,
+				07D7E0BD1520796B00AD4BC3 /* Foundation.framework */,
+				07D7E0BF1520796B00AD4BC3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07D7E0C11520796B00AD4BC3 /* EricShell */ = {
+			isa = PBXGroup;
+			children = (
+				07D7E0CA1520796C00AD4BC3 /* AppDelegate.h */,
+				07D7E0CB1520796C00AD4BC3 /* AppDelegate.m */,
+				07D7E0CD1520796C00AD4BC3 /* MainStoryboard.storyboard */,
+				07D7E0D01520796C00AD4BC3 /* ViewController.h */,
+				07D7E0D11520796C00AD4BC3 /* ViewController.m */,
+				07D7E0C21520796B00AD4BC3 /* Supporting Files */,
+			);
+			path = EricShell;
+			sourceTree = "<group>";
+		};
+		07D7E0C21520796B00AD4BC3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07D7E0C31520796B00AD4BC3 /* EricShell-Info.plist */,
+				07D7E0C41520796B00AD4BC3 /* InfoPlist.strings */,
+				07D7E0C71520796B00AD4BC3 /* main.m */,
+				07D7E0C91520796B00AD4BC3 /* EricShell-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07D7E0B61520796B00AD4BC3 /* EricShell */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07D7E0D51520796C00AD4BC3 /* Build configuration list for PBXNativeTarget "EricShell" */;
+			buildPhases = (
+				07D7E0B31520796B00AD4BC3 /* Sources */,
+				07D7E0B41520796B00AD4BC3 /* Frameworks */,
+				07D7E0B51520796B00AD4BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EricShell;
+			productName = EricShell;
+			productReference = 07D7E0B71520796B00AD4BC3 /* EricShell.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07D7E0AE1520796B00AD4BC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "University of Tsukuba";
+			};
+			buildConfigurationList = 07D7E0B11520796B00AD4BC3 /* Build configuration list for PBXProject "EricShell" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07D7E0AC1520796B00AD4BC3;
+			productRefGroup = 07D7E0B81520796B00AD4BC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07D7E0B61520796B00AD4BC3 /* EricShell */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07D7E0B51520796B00AD4BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D7E0C61520796B00AD4BC3 /* InfoPlist.strings in Resources */,
+				07D7E0CF1520796C00AD4BC3 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07D7E0B31520796B00AD4BC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07D7E0C81520796B00AD4BC3 /* main.m in Sources */,
+				07D7E0CC1520796C00AD4BC3 /* AppDelegate.m in Sources */,
+				07D7E0D21520796C00AD4BC3 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07D7E0C41520796B00AD4BC3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D7E0C51520796B00AD4BC3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07D7E0CD1520796C00AD4BC3 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07D7E0CE1520796C00AD4BC3 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07D7E0D31520796C00AD4BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		07D7E0D41520796C00AD4BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07D7E0D61520796C00AD4BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EricShell/EricShell-Prefix.pch";
+				INFOPLIST_FILE = "EricShell/EricShell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07D7E0D71520796C00AD4BC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EricShell/EricShell-Prefix.pch";
+				INFOPLIST_FILE = "EricShell/EricShell-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07D7E0B11520796B00AD4BC3 /* Build configuration list for PBXProject "EricShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D7E0D31520796C00AD4BC3 /* Debug */,
+				07D7E0D41520796C00AD4BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07D7E0D51520796C00AD4BC3 /* Build configuration list for PBXNativeTarget "EricShell" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07D7E0D61520796C00AD4BC3 /* Debug */,
+				07D7E0D71520796C00AD4BC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07D7E0AE1520796B00AD4BC3 /* Project object */;
+}
