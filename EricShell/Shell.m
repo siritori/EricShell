@@ -47,6 +47,7 @@ static NSArray* split2token(NSString *input)
    stdin_buf = @"";  // clear buffer
    [stdin_lock unlockWithCondition:STATE_NO_INPUT];
    /* !!! CRITICAL SECTION END !!!*/
+   [self print:@"%@\n", line];
    return line;
 }
 
