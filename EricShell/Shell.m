@@ -165,8 +165,8 @@ static NSArray* split2token(NSString *input)
    stdin_lock = [[NSConditionLock alloc] initWithCondition:STATE_NO_INPUT];
    // ShellModuleをロードする
    modules = [NSArray arrayWithObjects:
-              [[ShellStandard alloc] initWithShell:self],
-              [[ShellFlashDeck alloc] initWithShell:self],
+              [[ShellStandard alloc] initWithShell:self console:console_],
+              [[ShellFlashDeck alloc] initWithShell:self console:console_],
               nil];
    return self;
 }

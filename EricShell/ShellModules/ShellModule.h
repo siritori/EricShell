@@ -12,10 +12,11 @@
 @interface ShellModule : NSObject {
 @protected
    __weak Shell *shell;
+   __weak UITextView *console;
    NSDictionary *vtable;
 }
 +(void)cmdNotFoundWithShell:(Shell *)shell_ command:(NSString *)command;
--(id)initWithShell:(Shell *)shell_;
+-(id)initWithShell:(Shell *)shell_ console:(UITextView *)console_;
 -(BOOL)hasCommand:(NSString *)command;
 -(NSInteger)trapCommand:(NSString *)command arguments:(NSArray *)args;
 @end

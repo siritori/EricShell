@@ -16,10 +16,11 @@
    [shell_ print:@"ERROR: command '%@' not found\n", command];
 }
 
--(id)initWithShell:(Shell *)shell_
+-(id)initWithShell:(Shell *)shell_ console:(UITextView *)console_
 {
    if(!(self = [super init])) return nil;
    shell = shell_;
+   console = console_;
    return self;
 }
 
