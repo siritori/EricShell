@@ -74,7 +74,6 @@
 		07D7E0AC1520796B00AD4BC3 = {
 			isa = PBXGroup;
 			children = (
-				07E0B41E1520E2AF00B8553B /* Twitter.framework */,
 				07D7E0C11520796B00AD4BC3 /* EricShell */,
 				07D7E0BA1520796B00AD4BC3 /* Frameworks */,
 				07D7E0B81520796B00AD4BC3 /* Products */,
@@ -92,6 +91,7 @@
 		07D7E0BA1520796B00AD4BC3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				07E0B41E1520E2AF00B8553B /* Twitter.framework */,
 				07D7E0BB1520796B00AD4BC3 /* UIKit.framework */,
 				07D7E0BD1520796B00AD4BC3 /* Foundation.framework */,
 				07D7E0BF1520796B00AD4BC3 /* CoreGraphics.framework */,
