@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Shell.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate> {
+   Shell *shell;
+}
 
 @end
