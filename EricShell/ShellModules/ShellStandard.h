@@ -9,5 +9,5 @@
 #import "ShellModule.h"
 
 @interface ShellStandard : ShellModule
--(id)initWithShell:(Shell *)shell_;
+-(id)initWithShell:(Shell *)shell_ console:(UITextView *)console_;
 @end

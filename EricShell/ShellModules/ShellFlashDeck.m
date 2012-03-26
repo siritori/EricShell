@@ -14,9 +14,9 @@
 }
 static const uint NUM_COMMANDS = 2;
 
--(id)initWithShell:(Shell *)shell_
+-(id)initWithShell:(Shell *)shell_ console:(UITextView *)console_
 {
-   if(!(self = [super initWithShell:shell_])) return nil;
+   if(!(self = [super initWithShell:shell_ console:console_])) return nil;
    NSString *commandNames[NUM_COMMANDS] = {
       @"create_deck",
       @"print_deck",
