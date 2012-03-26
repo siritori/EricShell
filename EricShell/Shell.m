@@ -176,8 +176,6 @@ static NSArray* split2token(NSString *input)
    [self flushConsole];
    while (1) {
       NSString *line = [self getLine];
-      // 入力文字列を表示
-      [self print:@"%@\n", line];
       // 文字列を実行
       NSInteger result = [self execText:line];
       NSLog(@"result:%d", result);

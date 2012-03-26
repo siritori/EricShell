@@ -52,8 +52,7 @@ static const uint NUM_COMMANDS = 6;
 {
    NSString *name;
    if([args count] < 2) {
-      [shell print:@"Whats' your name?:\n"];
-      [shell flushConsole];
+      [shell print:@"Whats' your name?:"];
       name = [shell getLine];
    } else {
       name = [args objectAtIndex:1];
