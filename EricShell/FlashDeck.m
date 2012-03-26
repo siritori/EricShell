@@ -56,7 +56,7 @@
 #pragma mark Enumeration
 
 // cardsを数え上げるenumeratorを返す(for FlashDeckEnumerator only)
--(NSEnumerator*)cardEnumerator
+-(NSEnumerator *)cardEnumerator
 {
    return [cards objectEnumerator];
 }

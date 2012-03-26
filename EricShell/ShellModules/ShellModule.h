@@ -16,6 +16,6 @@
 }
 +(void)cmdNotFoundWithShell:(Shell *)shell_ command:(NSString *)command;
 -(id)initWithShell:(Shell *)shell_;
--(BOOL)hasCommand:(NSString*)command;
+-(BOOL)hasCommand:(NSString *)command;
 -(NSInteger)trapCommand:(NSString *)command arguments:(NSArray *)args;
 @end

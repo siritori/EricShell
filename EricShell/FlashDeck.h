@@ -19,14 +19,14 @@
 @property (readonly) NSUInteger num_wrong; // sum num_wrong in cards
 
 // Lifecycle
--(id)initWithName:(NSString*)name_;
+-(id)initWithName:(NSString *)name_;
 
 // Interface
 -(void)addCard:(FlashCard *)card;
--(FlashCard*)cardAt:(NSUInteger)index;
+-(FlashCard *)cardAt:(NSUInteger)index;
 
 // Enumeration
--(NSEnumerator*)cardEnumerator;
+-(NSEnumerator *)cardEnumerator;
 -(NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state
                                  objects:(__unsafe_unretained id [])buffer
                                    count:(NSUInteger)len;
